@@ -41,3 +41,5 @@ jobs:
             --accept 200..=299,429
             "./**/*.md"
           fail: true
+          # 今は Markdown にリンクが1つも無い。リンクが無いことを失敗にしない
+          failIfEmpty: false
